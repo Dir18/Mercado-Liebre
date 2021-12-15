@@ -1,0 +1,224 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2? family = Comforter & family = Comforter + Brush & family = Dancing + Script: wght @ 400; 600 & family = Roboto + Condensed: wght @ 300 & family = Roboto: ital, wght @ 0,300; 1,400 & display = swap ');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #ebebeb;
+    font-size: 12px;
+}
+
+.main-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px
+}
+.main-navbar ul {
+    display: flex;
+}
+.main-navbar li {
+    margin: 0 5px;
+}
+.main-navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*HEADER*/
+.main-header {
+    background-color: #EAC926;
+    padding: 20px
+}
+.promotion-text {
+    font-size: 15px;
+    text-align: center;
+    order: 1;
+}
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+main h3 {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento {
+    font-size: 16px;
+    width: 70%;
+    color: #39b54a;
+    margin: auto;
+}
+
+.descripcion {
+    font-size: 16px;
+    width: 100%;
+}
+
+.hamburguer-button {
+    background-color: #134faa;
+    color: #ffffff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -13px;
+}
+
+.product-container {
+    width: 90%;
+    margin: auto;
+    border: 1px solid #ebebeb;
+}
+
+.product {
+    background-color: white;
+    margin: 10px;
+}
+
+.product-info {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    /*Flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.product-info i {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 65px;
+    color: #39b54a;
+}
+
+.product img {
+    width: 100%
+}
+
+
+/*FOOTER*/
+.pie-pagina {
+    text-align: center;
+    background-color: #FFF;
+    
+}
+
+footer ul li i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*MEDIA QUERIES*/
+
+/*Nav. en mobile*/
+@media (max-width: 360px) {
+    main section article div p {
+        display: none;
+    }
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo {
+        width: 40%;
+    }
+    .barra-busqueda {
+        width: 60%;
+    }
+    .main-navbar {
+        display: none;
+    }
+}
+
+/*Nav. en Tablets*/
+@media (min-width: 361px) {
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: auto;
+        align-content: center;
+    }
+    .logo {
+        width: 35vw;
+    }
+    .barra-busqueda {
+        width: 51vw;
+    }
+    .hamburguer-button {
+        display: none;
+    }
+    .product {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+}
+
+/*Nav. en desktop*/
+@media (min-width: 769px) {
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center
+    }
+    .logo {
+        width: 25vw;
+    }
+    .barra-busqueda {
+        width: 30vw;
+    }
+
+}
+
+/*Resolución Máxima*/
+@media (min-width: 1200px) {
+    .header-container,
+    .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .logo {
+        width: 250px;
+    }
+    .main-navbar li {
+        margin: 0 10px
+    }
+    .main-navbar a {
+        font-size: 16px;
+    }
+
+}
