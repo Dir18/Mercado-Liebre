@@ -4,33 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Registro</title>
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+     <!-- Cabezera de la página-->
+     <header class="main-header-register">
+        <div class="header-container">
+        <img width="200px" class="logo" src="/images/logo-mercado-liebre.svg" alt="">
+        <!-- Barra de busqueda-->
+        <form class="barra-busqueda" action="">
+            <input type="text" name="busqueda" placeholder="Buscar productos, marcas">
+            <button><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+
     <section>
-        <input type="text" name="nombre y apellido" id="nombre y apellido" placeholder="">
-        <input type="date" name="fecha de nacimiento" id="nombre y apellido" placeholder="">
-        <input type="text" name="domicilio" id="domicilio" placeholder="">
-        <input type="text" name="nombre y apellido" id="nombre y apellido" placeholder="Ingrese Nombre y Apellido">
+        <div class="register">
+            <form action="/register" method="get">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ej: Ana Pérez" required>
+                <span class="feedback"></span>
+                <br>
+
+                <label for="user">Nombre de Usuario:</label> 
+                <input type="text" name="user" id="user" placeholder="ana321" required> 
+                <span class="feedback"></span>
+                <br>
+
+                <label for="email">correo electrónico:</label> 
+                <input type="email" name="email" id="email" placeholder="anaperez@gmail.com" required> 
+                <span class="feedback"></span>
+                <br>
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" name="fecha" id="fecha" required>
+                <span class="feedback"></span>
+                <br>
+
+                <label for="domicilio">Dirección:</label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Av. Córdoba 2552" required>
+                <span class="feedback"></span>
+
+                <p>Perfil del usuario</p>
+                <label><input type="radio" name="perfil" required>Comprar</label>
+                <label><input type="radio" name="perfil" required>Vender</label>
+
+                <p>Categorías de interés</p>
+                <label><input type="checkbox" name="categorias">Electro</label>
+                <br>
+                <label><input type="checkbox" name="categorias">Moda</label>
+                <br>
+                <label><input type="checkbox" name="categorias">Hogar</label>
+                <br>
+                <label><input type="checkbox" name="categorias">Juguetería</label>
+                <br>
+                <label><input type="checkbox" name="categorias">Vida sana</label>
+                <br>
+                <br>
+                <label for="clave">Contraseña:</label>
+                <input type="password" name="clave" id="clave" required>
+                <span class="feedback"></span>
+                <br>
+                <label for="clave">Confirmar contraseña:</label>
+                <input type="password" name="clave" id="clave" required>
+                <span class="feedback"></span>
+                <br>
+                <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+            </form>
+        </div>
+       
     </section>
     
 </body>
 </html>
-
-
-<!--■ Nombre y apellido
-■ Nombre de usuari@
-■ Fecha de nacimiento
-■ Domicilio
-■ Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender)
-■ Categorías de interés (puede elegir más de una)
-● Electro
-● Moda
-● Hogar
-● Juguetería
-● Vida sana
-■ Foto de usuario
-■ Contraseña
-■ Confirmar contraseña
-■ Botón de enviar que nos lleve a la página principal
-■ Botón de borrar todos los datos del formulario-->

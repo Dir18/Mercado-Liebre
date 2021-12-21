@@ -139,6 +139,35 @@ footer ul li i {
     padding-top: 10px;
 }
 
+/*REGISTER*/
+.main-header-register {
+    background-color: #EAC926;
+    padding: 20px
+}
+.form-register {
+    display: flex;
+    flex-wrap: wrap;
+}
+.register {
+    margin: 50px;
+    padding: 29px;
+    position: relative;
+    top: -45px;
+    box-shadow: 0px 0px 10px rgb(100 100 100)
+}
+
+/*LOGIN*/
+.main-header-login {
+    background-color: #EAC926;
+    padding: 20px
+}
+.login {
+    margin: 50px;
+    padding: 29px;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    text-align: center;
+}
+
 /*MEDIA QUERIES*/
 
 /*Nav. en mobile*/
@@ -233,6 +262,10 @@ footer ul li i {
 .descuento{
     text-align: right;
 }
+main h3 {
+    font-size: 24px;
+    padding-left: 18px;
+    text-align: center;
 }
 
 /*Nav. en desktop*/
@@ -266,7 +299,11 @@ footer ul li i {
     left: 70%;
     right: 65px;
        }
-
+ main h3 {
+    font-size: 24px;
+    padding-left: 18px;
+    text-align: start;
+    }
 }
 
 /*Resolución Máxima*/
@@ -285,5 +322,4 @@ footer ul li i {
     .main-navbar a {
         font-size: 16px;
     }
-
 }
